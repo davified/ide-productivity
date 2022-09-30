@@ -1,5 +1,8 @@
 # python virtual environments
 .venv
+venv
+*.pyc
+__pycache__
 
 # editor configs
 .vscode/
