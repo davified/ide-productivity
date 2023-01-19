@@ -4,7 +4,7 @@ from sklearn.metrics import precision_score
 import numpy as np
 import pandas as pd
 
-from src.helpers import do_something
+from src.ide_productivity.helpers import do_something
 
 df = pd.DataFrame(
     {

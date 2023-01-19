@@ -1,12 +1,15 @@
-FROM python:3.6.5-slim
-
-RUN apt-get update
+FROM python:3.10.6-slim AS dev
 
 WORKDIR /code
 
-COPY requirements.txt /code/requirements.txt
-RUN pip install -r requirements.txt
+RUN apt-get update && apt-get -y install gcc
 
-COPY . /code
+RUN pip install poetry
+ADD pyproject.toml /code/
+RUN poetry config installer.max-workers 10
+
+ENV VENV_PATH="/code/.venv" \
+    POETRY_VIRTUALENVS_IN_PROJECT=true
+ENV PATH="$VENV_PATH/bin:$PATH"
 
 CMD ["bash"]

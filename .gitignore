@@ -7,3 +7,6 @@ __pycache__
 # editor configs
 .vscode/
 .idea/
+
+# batect
+.batect/caches/key
