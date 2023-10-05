@@ -10,10 +10,10 @@ This will make it easier to configure our IDE to know about the Python interpret
 
 ```shell script
 # mac users
-scripts/go-mac.sh
+scripts/go/go-mac.sh
 
 # linux users
-scripts/go-linux-ubuntu.sh
+scripts/go/go-linux-ubuntu.sh
 
 # windows
 # 1. Download and install Python3 if not installed: https://www.python.org/downloads/release/python-31011/
@@ -24,7 +24,7 @@ scripts/go-linux-ubuntu.sh
 # Note: if you see a HTTPSConnectionPool read timed out error, just run this command a few more times until poetry install succeeds
 ```
 
-Configure your IDE to use the python virtual environment (`./.venv/`) created in the go script. 
+Configure your IDE to use the python virtual environment created in the go script. 
 - [PyCharm instructions](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#existing-environment)
 - [VS Code instructions](https://code.visualstudio.com/docs/python/environments)
 
