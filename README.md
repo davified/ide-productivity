@@ -16,7 +16,12 @@ scripts/go-mac.sh
 scripts/go-linux-ubuntu.sh
 
 # windows
-# work in progress. in the meantime, please install Docker manually if it's not already installed
+# 1. Download and install Python3 if not installed: https://www.python.org/downloads/release/python-31011/
+#    - During installation, when prompted, select "Add Python to PATH"
+# 2. In Windows explorer/Search, go 'Manage App Execution Aliases' and turn off 'App Installer' for python. This resolves the issue where the `python` executable is not found in the PATH
+# 3. Run the go script in the Powershell or Command Prompt Terminal
+.\scripts\go\go-windows.bat
+# Note: if you see a HTTPSConnectionPool read timed out error, just run this command a few more times until poetry install succeeds
 ```
 
 Configure your IDE to use the python virtual environment (`./.venv/`) created in the go script. 
