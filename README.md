@@ -31,16 +31,12 @@ Configure your IDE to use the python virtual environment created in the go scrip
 ## Tasks that you can run
 
 ```shell script
-# start docker runtime
-colima start
+# Exercise 0: warm up
+python src/ide_productivity/0_hello_ide.py
 
-# install dependencies
-./batect --output=all setup
+# Exercise 1: IntelliSense
+python src/ide_productivity/1_intellisense.py
 
-# start container (i.e. local dev environment)
-./batect start-dev-container
-
-### in the dev container
-
-
+# Exercise 2: Refactoring
+python src/ide_productivity/2_refactoring.py
 ```
