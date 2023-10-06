@@ -31,9 +31,9 @@ print(df)
 
 
 
-# Exercise: Fix coding formatting
+# Exercise: Fix code formatting
 # TODO: Notice the formatting inconsistencies (e.g. mixed single and double quotes in df)? Hit the shortcut to format the code.
-# Notice how the code style is now consistent (e.g. no more mix of single quotes and double quotes)
+# Now, notice how the code style is now consistent (e.g. no more mix of single quotes and double quotes)
 
 
 # Exercise: Sort imports
