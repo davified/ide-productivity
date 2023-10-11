@@ -2,8 +2,9 @@ import pandas as pd
 
 passengers = pd.DataFrame(
     {
-        "name": ['Alice', 'Bob', 'Charlie'],
-        'seat_number': ['1A', '10C', '42G'], 'age': ['30', '45', '12'],
+        "name": ["Alice", "Bob", "Charlie"],
+        "seat_number": ["1A", "10C", "42G"],
+        "age": [30., 45., 12.],
     }
 )
 
@@ -11,24 +12,28 @@ passengers = pd.DataFrame(
 # Exercise: Calculate the mean age of passengers
 # TODO: Put a dot (.) after the series, and you can browse through a list of Series methods that you could use to calculate the mean for the series
 # If you miss the suggestion, you can get it again by hitting the shortcut for Trigger Suggest (Ctrl + Space)
-mean_age = passengers["name"]
-print(mean_age)
+mean_age = passengers["age"]
+print(f"The mean age of passengers is: {mean_age}")
 
 
-# Exercise: Import `accuracy_score()` and `precision_recall_curve()` from `sklearn.metrics`
-# TODO: at the top of the file, start typing: "from sklearn.metrics import" and hit the shortcut for Trigger Suggest (Ctrl + Space)
-# Notice how you can simply browse through a list methods? No need to context switch and get distracted by browser tabs and ads!
-
-
-# Exercise: Convert the age column to integers
-# TODO: place your cursor within the parentheses of .astype(), hit the shortcut for Trigger Parameter Hints. Can you scroll through and see documentation and examples on how you can convert data types?
-# To find out the exact shortcut, you can Open Command Palette (F1), type the shortcut name (e.g. Parameter Hints), and you'll see the associated shortcut
-ages = passengers['name'].astype()
+# Exercise: Convert the age column from float to integers
+# TODO: Place your cursor on the function astype, hit the shortcut for Quick Documentation. Can you scroll through and see documentation and examples on how you can convert data types?
+# TODO: Place your cursor on the parenthesis of astype(), hit the shortcut for Parameter Hints. Can you identify the first parameter that this function accepts?
+ages = passengers["age"].astype()
 print(ages)
 
 
-# Exercise: Quick Fix
-# TODO: Uncomment the following line (it has an error!). 
-# Hover over the squiggly line to see the error and use the Quick Fix shortcut to fix the error
-# path.dirname("/the/path/to/somewhere")
+# Exercise: Auto Fix
+# TODO: Uncomment the following line (it has an error!).
+# Hover over the squiggly line to see the error and use the auto fix shortcut to fix the error
+# directory_name = path.dirname("/the/path/to/somewhere")
+# print(directory_name)
+
+
+# Exercise: Linting
+# TODO: Uncomment the last line. Notice the linter's warning for greet()? Can you read the error and find a fix?
+def greet(name: str):
+   print(f"Howdy {name}!")
+
+# greet()
 

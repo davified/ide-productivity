@@ -5,8 +5,5 @@ venv
 __pycache__
 
 # editor configs
-.vscode/
 .idea/
 
-# batect
-.batect/caches/key

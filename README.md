@@ -10,32 +10,33 @@ This will make it easier to configure our IDE to know about the Python interpret
 
 ```shell script
 # mac users
-scripts/go-mac.sh
+scripts/go/go-mac.sh
 
 # linux users
-scripts/go-linux-ubuntu.sh
+scripts/go/go-linux-ubuntu.sh
 
 # windows
-# work in progress. in the meantime, please install Docker manually if it's not already installed
+# 1. Download and install Python3 if not installed: https://www.python.org/downloads/release/python-31011/
+#    - During installation, when prompted, select "Add Python to PATH"
+# 2. In Windows explorer/Search, go 'Manage App Execution Aliases' and turn off 'App Installer' for python. This resolves the issue where the `python` executable is not found in the PATH
+# 3. Run the go script in the Powershell or Command Prompt Terminal
+.\scripts\go\go-windows.bat
+# Note: if you see a HTTPSConnectionPool read timed out error, just run this command a few more times until poetry install succeeds
 ```
 
-Configure your IDE to use the python virtual environment (`./.venv/`) created in the go script. 
+Configure your IDE to use the python virtual environment created in the go script. 
 - [PyCharm instructions](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#existing-environment)
 - [VS Code instructions](https://code.visualstudio.com/docs/python/environments)
 
 ## Tasks that you can run
 
 ```shell script
-# start docker runtime
-colima start
+# Exercise 0: warm up
+python src/ide_productivity/0_hello_ide.py
 
-# install dependencies
-./batect --output=all setup
+# Exercise 1: IntelliSense
+python src/ide_productivity/1_intellisense.py
 
-# start container (i.e. local dev environment)
-./batect start-dev-container
-
-### in the dev container
-
-
+# Exercise 2: Refactoring
+python src/ide_productivity/2_refactoring.py
 ```
