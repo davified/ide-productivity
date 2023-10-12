@@ -1,5 +1,9 @@
-# Exercise: Format code
-# Task: Open the file, notice the formatting inconsistencies (line spaces, mixed quotes, missing spaces, etc.), and hit the shortcut to format the code.
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+
+
+# Exercise 2.1: Format code
+# Task: Notice the formatting inconsistencies (mixed single and double quotes, mixed indentation, etc.)? Hit the shortcut to format the code.
 # Look at the git diff, and notice how the code style is now consistent (e.g. no more mix of single quotes and double quotes)
 
 def add_derived_title(df):
@@ -36,3 +40,6 @@ def add_categorical_columns(df):
                             "Rare": 5}).fillna(0)
 
     return df
+
+# Exercise 2.2: Organize imports
+# Task: Notice the unused imports at the top? Hit the shortcut the organize imports, and notice the imports are now tidy
