@@ -31,6 +31,9 @@ Configure your IDE to use the python virtual environment created in the go scrip
 ## Tasks that you can run
 
 ```shell script
+# Activate virtual environment
+poetry shell
+
 # Exercise 0: warm up
 python src/ide_productivity/0_hello_ide.py
 
