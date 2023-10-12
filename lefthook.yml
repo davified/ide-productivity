@@ -1,0 +1,6 @@
+pre-commit:
+  commands:
+    format-python:
+      run: black --check .
+    lint-python:
+      run: black --check .
