@@ -1,0 +1,17 @@
+// https://code.visualstudio.com/docs/getstarted/settings
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
+  "editor.tabSize": 4,
+
+  // Controls whether the minimap is shown
+  "editor.minimap.enabled": false,
+
+  // Controls auto save of editors that have unsaved changes
+  "files.autoSave": "afterDelay",
+
+  // Controls automatic word wrap for lines that don't fit on screen
+  "editor.wordWrap": "on"
+}
